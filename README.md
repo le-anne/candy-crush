@@ -1,7 +1,8 @@
 # Candy Crush Inspired Game
 
-This classic game is currently being built with React! 
+![candy crush](https://i.ibb.co/Msz0Qn3/candy-crush-copy.png)
 
+This classic game is currently being built with React! 
 
 
 ---
