@@ -2,7 +2,7 @@
 
 ![candy crush](https://i.ibb.co/Msz0Qn3/candy-crush-copy.png)
 
-This classic game is currently being built with React! 
+This classic game is currently being built with React! [Play the demo here!](https://candy-crush-hazel.vercel.app/)
 
 
 ---
