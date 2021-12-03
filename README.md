@@ -1,3 +1,12 @@
+# Candy Crush Inspired Game
+
+![candy crush](https://i.ibb.co/Msz0Qn3/candy-crush-copy.png)
+
+This classic game is currently being built with React! 
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
