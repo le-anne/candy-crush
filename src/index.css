@@ -1,6 +1,17 @@
+* {
+  background-color: rgb(6, 20, 0);
+}
+
+div.app {
+  margin: auto;
+  width: 50%;
+  padding-top: 150px;
+}
+
 .app {
   display: flex;
   padding: 30px;
+  background-color: rgb(6, 20, 0);
 }
 
 .game {
@@ -13,4 +24,24 @@
 .game img {
   width: 70px;
   height: 70px;
+}
+
+h1 {
+  color: #22b936 !important;
+  font-size: 28px;
+  padding: 20px;
+  margin-bottom: -100px;
+}
+
+h2 {
+  color: white;
+  font-size: 120px;
+  padding-left: 35px;
+}
+
+div.score-board {
+  padding-top: 125px;
+  padding-left: 30px;
+  margin-left: 30px;
+  border-left: 3px solid rgba(244, 244, 244, 0.9) !important;
 }
