@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ScoreBoard from "./components/ScoreBoard";
 import blueCandy from "./images/blue-candy.png";
 import greenCandy from "./images/green-candy.png";
