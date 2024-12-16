@@ -148,7 +148,7 @@ const App = () => {
         <ScoreBoard score={scoreDisplay} />
 
       </div>
-      
+      < br ></br>
       <div className="game">
         {currentColorArrangement.map((candyColor, index) => (
           <img
