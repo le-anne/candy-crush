@@ -118,7 +118,7 @@ function buildPathPlugin() {
       const { BUILD_PATH } = loadEnv(mode, ".", ["BUILD_PATH"]);
       return {
         build: {
-          outDir: BUILD_PATH || "build",
+          outDir: "dist" || "build",
         },
       };
     },
