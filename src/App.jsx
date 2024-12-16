@@ -7,6 +7,9 @@ import purpleCandy from "./images/flower.png";
 import redCandy from "./images/lips3.png";
 import yellowCandy from "./images/pizza3.png";
 import blank from "./images/blank.png";
+const deepClone = (obj) => JSON.parse(JSON.stringify(obj));
+
+
 
 const width = 8;
 const candyColors = [
@@ -217,18 +220,23 @@ const App = () => {
     <div className="app">
       <div className="game">
         {currentColorArrangement.map((candyColor, index) => (
-          <img
-            key={index}
-            style={{ backgroundColor: candyColor }}
-            src={candyColor}
-            alt={candyColor}
-            data-id={index}
-            draggable={true}
-            onDragStart={dragStart}
-            onDragOver={(e) => e.preventDefault()}
-            onDrop={dragDrop}
-            onDragEnd={dragEnd}
-          />
+         <img
+         key={index}
+         src={candyColor}
+         alt={`Candy ${index}`}
+         onError={(e) => {
+           console.error(`Failed to load image: ${candyColor}`);
+           e.target.src = blank; // Fallback image
+         }}
+         style={{ backgroundColor: candyColor }}
+         data-id={index}
+         draggable={true}
+         onDragStart={dragStart}
+         onDragOver={(e) => e.preventDefault()}
+         onDrop={dragDrop}
+         onDragEnd={dragEnd}
+       />
+       
         ))}
       </div>
       <ScoreBoard score={scoreDisplay} />
