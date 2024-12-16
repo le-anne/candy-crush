@@ -1,10 +1,12 @@
 import React from "react";
+import '../index.css';
+
 
 const ScoreBoard = ({ score }) => {
   return (
     <div className="score-board">
-      <h1> SCORE </h1>
-      <h2>{score}</h2>
+      <p> SCORE </p>
+      <p>{score}</p>
     </div>
   );
 };

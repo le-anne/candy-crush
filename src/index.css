@@ -3,13 +3,13 @@
 }
 
 div.app {
-  margin: auto;
-  width: 50%;
-  padding-top: 150px;
+  max-width: fit-content;
+  margin-inline: auto;
 }
 
 .app {
   display: flex;
+  flex-direction: column;
   padding: 30px;
   background-color: rgb(6, 20, 0);
 }
@@ -24,6 +24,8 @@ div.app {
 .game img {
   width: 70px;
   height: 70px;
+  transition: transform 1.8s ease, opacity 1.8s ease;
+
 }
 
 h1 {
@@ -40,8 +42,8 @@ h2 {
 }
 
 div.score-board {
-  padding-top: 125px;
-  padding-left: 30px;
-  margin-left: 30px;
-  border-left: 3px solid rgba(244, 244, 244, 0.9) !important;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
 }
